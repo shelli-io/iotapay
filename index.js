@@ -1,6 +1,8 @@
 const paymentModule = require('iota-payment')
 const app = require('express')()
 const PORT = process.env.PORT || 5000;
+const cors = require('cors');
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.send('hello world shelli.io iotapay!');

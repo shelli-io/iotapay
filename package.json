@@ -4,6 +4,7 @@
   "description": "shell.io backend to buy iota online",
   "main": "index.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "iota-payment": "^0.0.58"
   },
   "devDependencies": {},
