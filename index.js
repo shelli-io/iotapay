@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 // GET /balance
 app.get('/balance', (req, res) => {
     paymentModule.getBalance().then(balance => {
-        res.send(balance)
+        res.send({balance: balance})
     })
     .catch(err => {
         console.log(err)
