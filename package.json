@@ -1,0 +1,16 @@
+{
+  "name": "iotapay",
+  "version": "0.0.1",
+  "description": "shell.io backend to buy iota online",
+  "main": "index.js",
+  "dependencies": {
+    "iota-payment": "^0.0.58"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "huhn, thoralf",
+  "license": "ISC"
+}
