@@ -5,6 +5,16 @@ app.get("/", (req, res) => {
     res.send('hello world shelli.io iotapay!');
 });
 
+// GET /balance
+app.get('/balance', (req, res) => {
+    paymentModule.getBalance().then(balance => {
+        res.send(balance)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+})
+
 let options = {
     api: true,
     websockets: true
